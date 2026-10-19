@@ -55,12 +55,13 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 
 ## Aporte de cada integrante
 
+## Aporte de cada integrante
+
 | Integrante | Qué hizo (archivos / pasos) |
 |---|---|
-| | |
-
-Joselyn Morocho: creo el repositorio de GitHub, renombro la entidad de product a postre, definió el modelo, dejó los datos de ejemplo en postres.json ademas completa también la tabla de datos del inicio (grupo, emprendimiento, integrantes, NRC, fecha y el enlace del repositorio). 
-
+| Joselyn Morocho  | Creó el repositorio de GitHub, renombró la entidad de product a postre, definió el modelo y los datos de ejemplo en `postres.json`, programó el servicio con las validaciones y las operaciones create, update y remove, completó la cabecera de `app.js` y la tabla de datos del inicio del README (grupo, emprendimiento, integrantes, NRC, fecha y enlace del repositorio). Archivos: `models/postre.model.js`, `services/postre.service.js`, `data/postres.json`, `routes/index.js`, `app.js`. |
+| Jonathan Guayta | Pendiente |
+| Matias Rojas  | Pendiente |
 
 
 
