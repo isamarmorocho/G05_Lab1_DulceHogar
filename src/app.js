@@ -1,9 +1,7 @@
-/*
- * Laboratorio 1 · Mini-API MVC con CRUD
- * Desarrollo Web Avanzado (A0R04) · ESPE
- * Grupo: GXX · Emprendimiento: __________
- * Integrantes: __________ · NRC: _____ · Fecha: __/__/____
- */
+   /**
+    * Grupo: G05 · Emprendimiento: Dulce Hogar-Repostería
+    * Integrantes: Jonathan Guayta, Joselyn Morocho, Matias Rojas· NRC: 36878 · Fecha: 18/10/2026
+    */
 const express = require("express");
 const routes = require("./routes");
 const logger = require("./middlewares/logger");
