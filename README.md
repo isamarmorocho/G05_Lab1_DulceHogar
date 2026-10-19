@@ -61,7 +61,7 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 |---|---|
 | Joselyn Morocho  | Creó el repositorio de GitHub, renombró la entidad de product a postre, definió el modelo y los datos de ejemplo en `postres.json`, programó el servicio con las validaciones y las operaciones create, update y remove, completó la cabecera de `app.js` y la tabla de datos del inicio del README (grupo, emprendimiento, integrantes, NRC, fecha y enlace del repositorio). Archivos: `models/postre.model.js`, `services/postre.service.js`, `data/postres.json`, `routes/index.js`, `app.js`. |
 | Jonathan Guayta | Pendiente |
-| Matias Rojas  | Pendiente |
+| Matias Rojas  | Realizo el controlador (create, update, remove) y las rutas POST, PUT y DELETE, implementó los middlewares logger y errorHandler. Archivos: `src/controllers/postre.controller.js`, `src/routes/postre.routes.js`, `src/middlewares/logger.js`, `src/middlewares/errorHandler.js`.  |
 
 
 
