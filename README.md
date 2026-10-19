@@ -1,16 +1,14 @@
 # Laboratorio 1 · Mini-API MVC con CRUD
 
 **Desarrollo Web Avanzado (A0R04) · ESPE · Unidad 1: Persistencia de datos y ORM**
-
-| Dato | Valor |
-|---|---|
-| Grupo | GXX |
-| Emprendimiento | |
-| Integrantes | 1. <br> 2. <br> 3. <br> 4. |
-| NRC | |
-| Fecha | |
-| Repositorio | (enlace) |
-
+   | Dato | Valor |
+   |---|---|
+   | Grupo | G05 |
+   | Emprendimiento | Dulce Hogar (repostería casera) |
+   | Integrantes | 1. Jonathan Guayta <br> 2. Joselyn Morocho <br> 3. Matias Rojas |
+   | NRC | 36878 |
+   | Fecha | 19/10/2026 |
+   | Repositorio | https://github.com/isamarmorocho/G05_Lab1_DulceHogar |
 ## Cómo ejecutar
 
 ```bash
