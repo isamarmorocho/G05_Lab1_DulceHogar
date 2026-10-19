@@ -61,6 +61,13 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 |---|---|
 | | |
 
+Joselyn Morocho: creo el repositorio de GitHub, renombro la entidad de product a postre, definió el modelo, dejó los datos de ejemplo en postres.json ademas completa también la tabla de datos del inicio (grupo, emprendimiento, integrantes, NRC, fecha y el enlace del repositorio). 
+
+
+
+
+
+
 ## Declaración de uso de IA
 
 - Herramienta(s) usada(s): ___ (o «No se usó IA»)
