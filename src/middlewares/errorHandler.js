@@ -9,6 +9,12 @@ const errorHandler = (err, req, res, next) => {
    
   //  b) Si status es 500, responde "Error interno del servidor" y agrega err.stack
   //     solo cuando process.env.NODE_ENV !== "production".
+   if (status === 500) {
+    const cuerpo = { error: "Error interno del servidor" };
+    if (process.env.NODE_ENV !== "production") cuerpo.stack = err.stack;
+    return res.status(500).json(cuerpo);
+  }
+
   res.status(status).json({ error: err.message });
 };
 
