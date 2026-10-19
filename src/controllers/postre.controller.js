@@ -28,19 +28,31 @@ const getById = async (req, res, next) => {
   }
 };
 
-// TODO Paso 2: POST / → llama a postreService.create(req.body ?? {}) y responde 201 con el registro
 const create = async (req, res, next) => {
-  next(new HttpError(501, "create pendiente en el controlador"));
+  try{
+    const item = await postreService.create(req.body ?? {});
+    res.status(201);json(item);
+  } cath (err) {
+    next (err);
+  }
+
 };
 
-// TODO Paso 2: PUT /:id → llama a postreService.update(parseId(req), req.body ?? {}) y responde 200
 const update = async (req, res, next) => {
-  next(new HttpError(501, "update pendiente en el controlador"));
+  try {
+    res.json(await postreService.update(parseId(req), req.body ?? {}));
+  } catch (err) {
+    next(err);
+  }
 };
 
-// TODO Paso 2: DELETE /:id → llama a postreService.remove(parseId(req)) y responde 204 sin cuerpo (res.status(204).end())
 const remove = async (req, res, next) => {
-  next(new HttpError(501, "remove pendiente en el controlador"));
+  try {
+    await postreService.remove(parseId(req));
+    res.status(204).end();
+  } catch (err) {
+    next(err);
+  }
 };
 
 module.exports = { list, getById, create, update, remove };
