@@ -1,12 +1,12 @@
 {
   "info": {
     "name": "GXX_Lab1 · Mini-API MVC",
-    "description": "Colección del Laboratorio 1 (Desarrollo Web Avanzado). Renombra GXX con tu número de grupo y /api/products con la ruta de tu entidad. Ejecuta las peticiones en orden (Run collection).",
+    "description": "Colección del Laboratorio 1 (Desarrollo Web Avanzado).",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "1. Listar productos",
+      "name": "1. Listar postres",
       "event": [
         {
           "listen": "test",
@@ -23,19 +23,19 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/products",
+          "raw": "{{baseUrl}}/api/postres",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products"
+            "postres"
           ]
         }
       }
     },
     {
-      "name": "2. Crear producto",
+      "name": "2. Crear postre",
       "event": [
         {
           "listen": "test",
@@ -59,18 +59,18 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/api/products",
+          "raw": "{{baseUrl}}/api/postres",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products"
+            "postres"
           ]
         },
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"name\": \"Capuchino\",\n  \"price\": 3.2,\n  \"stock\": 15,\n  \"category\": \"bebidas\"\n}",
+          "raw": "{\n  \"nombre\": \"Cheesecake de fresa\",\n  \"precio\": 15,\n  \"stock\": 5,\n  \"categoria\": \"tortas\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -80,7 +80,7 @@
       }
     },
     {
-      "name": "3. Ver un producto",
+      "name": "3. Ver un postre",
       "event": [
         {
           "listen": "test",
@@ -97,20 +97,20 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/products/{{id}}",
+          "raw": "{{baseUrl}}/api/postres/{{id}}",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products",
+            "postres",
             "{{id}}"
           ]
         }
       }
     },
     {
-      "name": "4. Actualizar producto",
+      "name": "4. Actualizar postre",
       "event": [
         {
           "listen": "test",
@@ -118,7 +118,7 @@
             "type": "text/javascript",
             "exec": [
               "pm.test(\"200 OK\", () => pm.response.to.have.status(200));",
-              "pm.test(\"Precio actualizado\", () => pm.expect(pm.response.json().price).to.eql(3.5));"
+              "pm.test(\"Precio actualizado\", () => pm.expect(pm.response.json().precio).to.eql(13.5));"
             ]
           }
         }
@@ -132,19 +132,19 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/api/products/{{id}}",
+          "raw": "{{baseUrl}}/api/postres/{{id}}",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products",
+            "postres",
             "{{id}}"
           ]
         },
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"price\": 3.5\n}",
+          "raw": "{\n  \"precio\": 13.5\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -176,18 +176,18 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/api/products",
+          "raw": "{{baseUrl}}/api/postres",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products"
+            "postres"
           ]
         },
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"name\": \"\",\n  \"price\": -1\n}",
+          "raw": "{\n  \"nombre\": \"\",\n  \"precio\": -3\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -197,7 +197,7 @@
       }
     },
     {
-      "name": "6. Producto inexistente (404)",
+      "name": "6. Postre inexistente (404)",
       "event": [
         {
           "listen": "test",
@@ -213,20 +213,20 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/products/99999",
+          "raw": "{{baseUrl}}/api/postres/99999",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products",
+            "postres",
             "99999"
           ]
         }
       }
     },
     {
-      "name": "7. Eliminar producto",
+      "name": "7. Eliminar postre",
       "event": [
         {
           "listen": "test",
@@ -242,13 +242,13 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/products/{{id}}",
+          "raw": "{{baseUrl}}/api/postres/{{id}}",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products",
+            "postres",
             "{{id}}"
           ]
         }
@@ -271,13 +271,13 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/api/products/{{id}}",
+          "raw": "{{baseUrl}}/api/postres/{{id}}",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "api",
-            "products",
+            "postres",
             "{{id}}"
           ]
         }
