@@ -64,9 +64,9 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 
 | Integrante | Qué hizo (archivos / pasos) |
 |---|---|
-| NOMBRE APELLIDO (Persona 1) | Creó el repositorio, renombró la entidad product → postre, definió el modelo (4 campos) y los datos de ejemplo, y programó el servicio con las validaciones y create, update y remove. Archivos: models/postre.model.js, services/postre.service.js, data/postres.json, routes/index.js, app.js. |
-| NOMBRE APELLIDO (Persona 2) | Programó el controlador (create, update, remove) y las rutas POST, PUT y DELETE, implementó los middlewares logger y errorHandler y capturó la evidencia del logger. Archivos: controllers/postre.controller.js, routes/postre.routes.js, middlewares/logger.js, middlewares/errorHandler.js, evidencias/logger.png. |
-| NOMBRE APELLIDO (Persona 3) | Redactó PROPUESTA.md y el mapa, adaptó y ejecutó la colección de Postman (13 pruebas en verde), completó este README y armó la entrega. Archivos: PROPUESTA.md, mapa.png, README.md, postman/, evidencias/postman-run.png. |
+| Joselyn Morocho | Creó el repositorio, renombró la entidad product → postre, definió el modelo (4 campos) y los datos de ejemplo, y programó el servicio con las validaciones y create, update y remove. Archivos: models/postre.model.js, services/postre.service.js, data/postres.json, routes/index.js, app.js. |
+| Matias Rojas | Programó el controlador (create, update, remove) y las rutas POST, PUT y DELETE, implementó los middlewares logger y errorHandler y capturó la evidencia del logger. Archivos: controllers/postre.controller.js, routes/postre.routes.js, middlewares/logger.js, middlewares/errorHandler.js, evidencias/logger.png. |
+| Jonathan Guayta | Redactó PROPUESTA.md y el mapa, adaptó y ejecutó la colección de Postman (13 pruebas en verde), completó este README y armó la entrega. Archivos: PROPUESTA.md, mapa.png, README.md, postman/, evidencias/postman-run.png. |
 
 ## Declaración de uso de IA
 
