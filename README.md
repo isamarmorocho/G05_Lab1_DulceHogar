@@ -50,25 +50,26 @@ Flujo de una petición: **ruta → controlador → servicio → modelo** y de vu
 
 ## Validaciones del servicio
 
-1.
-2.
+1. `nombre` es obligatorio y debe ser un texto de al menos 3 caracteres (si no, 400).
+2. `precio` debe ser un número mayor o igual a 0 (si no, 400).
+3. (Extra) `stock`, si se envía, debe ser un entero mayor o igual a 0 (si no, 400).
 
-## Aporte de cada integrante
+## Middlewares
+
+- **logger**: imprime en consola la hora, el verbo, la ruta, el código de estado y la duración de cada petición.
+- **notFound**: una ruta inexistente responde 404 en JSON.
+- **errorHandler**: un JSON mal formado responde 400; un error inesperado responde 500 con «Error interno del servidor» y muestra `err.stack` solo si `NODE_ENV` no es `production`.
 
 ## Aporte de cada integrante
 
 | Integrante | Qué hizo (archivos / pasos) |
 |---|---|
-| Joselyn Morocho  | Creó el repositorio de GitHub, renombró la entidad de product a postre, definió el modelo y los datos de ejemplo en `postres.json`, programó el servicio con las validaciones y las operaciones create, update y remove, completó la cabecera de `app.js` y la tabla de datos del inicio del README (grupo, emprendimiento, integrantes, NRC, fecha y enlace del repositorio). Archivos: `models/postre.model.js`, `services/postre.service.js`, `data/postres.json`, `routes/index.js`, `app.js`. |
-| Jonathan Guayta | Pendiente |
-| Matias Rojas  | Realizo el controlador (create, update, remove) y las rutas POST, PUT y DELETE, implementó los middlewares logger y errorHandler. Archivos: `src/controllers/postre.controller.js`, `src/routes/postre.routes.js`, `src/middlewares/logger.js`, `src/middlewares/errorHandler.js`.  |
-
-
-
-
+| NOMBRE APELLIDO (Persona 1) | Creó el repositorio, renombró la entidad product → postre, definió el modelo (4 campos) y los datos de ejemplo, y programó el servicio con las validaciones y create, update y remove. Archivos: models/postre.model.js, services/postre.service.js, data/postres.json, routes/index.js, app.js. |
+| NOMBRE APELLIDO (Persona 2) | Programó el controlador (create, update, remove) y las rutas POST, PUT y DELETE, implementó los middlewares logger y errorHandler y capturó la evidencia del logger. Archivos: controllers/postre.controller.js, routes/postre.routes.js, middlewares/logger.js, middlewares/errorHandler.js, evidencias/logger.png. |
+| NOMBRE APELLIDO (Persona 3) | Redactó PROPUESTA.md y el mapa, adaptó y ejecutó la colección de Postman (13 pruebas en verde), completó este README y armó la entrega. Archivos: PROPUESTA.md, mapa.png, README.md, postman/, evidencias/postman-run.png. |
 
 ## Declaración de uso de IA
 
-- Herramienta(s) usada(s): ___ (o «No se usó IA»)
-- Para qué la usamos (consultar, depurar, explicar un error…):
-- Qué verificamos o corregimos nosotros:
+- Herramienta(s) usada(s): Claude (asistente de IA).
+- Para qué la usamos: entender la estructura MVC y las instrucciones del laboratorio, y consultar dudas y errores.
+- Qué verificamos o corregimos nosotros: ejecutamos la API, probamos cada endpoint en Postman, comprobamos los códigos 200, 201, 204, 400 y 404 y adaptamos los nombres, campos y validaciones a nuestra entidad.
