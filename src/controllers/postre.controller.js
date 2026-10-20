@@ -32,7 +32,7 @@ const create = async (req, res, next) => {
   try{
     const item = await postreService.create(req.body ?? {});
     res.status(201);json(item);
-  } cath (err) {
+  } catch (err) {
     next (err);
   }
 
