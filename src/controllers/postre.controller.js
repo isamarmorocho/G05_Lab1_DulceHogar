@@ -31,7 +31,7 @@ const getById = async (req, res, next) => {
 const create = async (req, res, next) => {
   try{
     const item = await postreService.create(req.body ?? {});
-    res.status(201);json(item);
+    res.status(201).json(item);
   } catch (err) {
     next (err);
   }
