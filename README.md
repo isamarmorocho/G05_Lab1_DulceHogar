@@ -3,7 +3,7 @@
 **Desarrollo Web Avanzado (A0R04) · ESPE · Unidad 1: Persistencia de datos y ORM**
    | Dato | Valor |
    |---|---|
-   | Grupo | G05 |
+   | Grupo | G06 |
    | Emprendimiento | Dulce Hogar (repostería casera) |
    | Integrantes | 1. Jonathan Guayta <br> 2. Joselyn Morocho <br> 3. Matias Rojas |
    | NRC | 36878 |
